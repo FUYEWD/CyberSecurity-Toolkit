@@ -1,92 +1,138 @@
-# CyberSecurity-Toolkit
-A beginner-friendly cybersecurity toolkit including port scanner, AES encryption, web security demos, and security reports.
-🌐 網路安全工具包（CyberSecurity Toolkit）
+🛡️ CyberSecurity Toolkit — v2 (Remand Edition)
 
-一個由 fuy 開發、面向初學者與研究者的網路安全工具包。
-這個專案集合了 網路掃描、密碼學、Web 安全性示範與資安技術文件，目的在於：
+一個 輕量、創意、教育向 的資安工具箱。
+主打模組化、易讀、用途清楚，適合作為：
 
-建立我的 資安學習框架與作品集
+✔ GitHub 作品集
 
-練習 程式開發、攻防概念、報告撰寫
+✔ 面試展示
 
-展示我對 資料科學 + 系統安全 + 工程實作 的跨領域整合能力
+✔ 資安課程、專題
 
-為未來從事 資料科學 / 網路安全 / AI 安全 奠定基礎
+✔ 個人學習工具
 
-本工具包以 理解原理、可讀性與創意呈現 為核心，希望能讓剛入門資安的人，也能在友善的架構中快速掌握關鍵概念。
+✨ 特色 (Highlights)
 
-🚀 專案特色 Highlights
-🔍 1. Quantum-Inspired Port Scanner（量子靈感埠掃描器）
+模組化設計：每個資料夾都是獨立工具，可單獨使用
 
-一款以「量子掃描」為概念包裝的多線程 Port Scanner。
-功能：
+極度輕量：無外部依賴，好跑、不佔資源
 
-多執行緒快速掃描大量 port
+帶有創意：例如「迷因加密」、「釣魚信情緒誘導分數」
 
-類似 Nmap 基礎版
+安全無害：即便是 malware-sim 也只是模擬，不會破壞系統
 
-適合用來觀察網路服務的開放情況
+可當教材：每支程式都附「程式內註解」與「教學邏輯」
 
-✨ 我為什麼要做這個？
-為了強化我對 socket、TCP 連線原理、ThreadPool 執行緒模型 的理解，也建立未來進階掃描器的基礎。
+🗂️ 專案架構 (Overview)
+CyberSecurity-Toolkit-v2/
+│── encryption/                # 加密工具
+│   ├── aes_encryptor.py
+│   ├── meme_cipher.py
+│   └── rot13_fun.py
+│
+│── pentest-utils/             # 滲透測試常用小工具
+│   ├── header_info.py
+│   └── common_password_scanner.py
+│
+│── phishing-sim/              # 釣魚郵件模擬器
+│   ├── generator.py
+│   └── templates/
+│       ├── urgent_payment.txt
+│       ├── fake_github_alert.txt
+│       └── internal_update.txt
+│
+│── malware-sim/               # 假惡意程式行為模擬 (安全版)
+│   └── harmless_ransomware.py
+│
+│── ai-log-analyzer/           # AI 模擬規則式 Log 分析器
+│   └── rule_based_ai.py
+│
+└── README.md
 
-🔐 2. Cyber-Alchemist AES Tool（賽博煉金 AES 密碼學工具）
+🔐 1. Encryption Tools
+✔ AES Encryptor
 
-以「密文煉金術」為概念的加密/解密器。
+基本示範對稱式加密。
 
-使用 cryptography 套件（Fernet AES）
+✔ Meme Cipher
 
-自動生成 key
+創意功能：把每個字元轉成「迷因風格代碼」。
 
-可用於本地資料簡易保護
+✔ Fun ROT13
 
-✨ 我為什麼要做這個？
-資料科學家與工程師都會面對資料隱私議題，因此我在專案中加入 密碼學的實作基礎，也讓未來做 Token、JWT、API 驗證時更得心應手。
+ROT13 + 彩色輸出 + 小彩蛋。
 
-🕸️ 3. XSS Multiverse Guide（XSS 多重宇宙指南）
+🛠️ 2. Pentest Utilities
+✔ Header Info
 
-這不是普通的 XSS 文件，而是把攻擊手法拆成 不同宇宙的敘事方式：
+快速查看目標網站 HTTP 標頭。
 
-Reflected XSS
+✔ Weak Password Scanner
 
-Stored XSS
+內建常見弱密碼字典，可自行擴充。
 
-DOM-based XSS
+🎣 3. Phishing Email Simulator
 
-外加防禦對策
+自動產生：
 
-✨ 我為什麼要做這個？
-因為我相信「好故事比純理論更容易記住」。
-透過創意文案方式呈現 Web 漏洞，使我的作品集更具辨識度。
+騙財款通知
 
-📄 4. Security Report / 資安報告示範
+假 GitHub 安全警告
 
-提供一份我自己撰寫的資安分析報告，內容包括：
+內部更新通知
 
-漏洞描述
+並加入 情緒誘導評分機制（0～100）。
 
-風險分析
+🧪 4. Malware Simulation (Safe)
 
-攻擊重現步驟
+模擬「看起來像勒索軟體」但不會傷害系統：
 
-建議修補方式
+記錄檔案名稱
 
-✨ 我為什麼要做這個？
-這是未來做 滲透測試、資安研究、CTF writeup 必備技能，也展示我在「技術寫作」與「邏輯表達」的能力。
+產生假加密檔案
 
+產生 ransom_note.txt
 
-🎯 我的目標（為什麼做這個專案）
+純教育用。
 
-這個專案不只是程式碼，而是我個人成長的一部分。
+🔍 5. AI Log Analyzer
 
-✔ 建立 資安基礎 + 工程實作能力
-✔ 練習 報告撰寫、知識整理、技術文檔
-✔ 強化 問題拆解、工程邏輯、系統思維
-✔ 結合未來的 資料科學、AI、機器人安全性
-✔ 與朋友們討論（如哲學、科技、工程）時能有更深的理解
+無需機器學習模型，使用：
 
-長遠來說，我希望能打造：
+Pattern Matching
 
-「一個從工程 → 資安 → AI → 系統層級思考」的完整底盤。
+基本統計異常偵測
 
-這個 repo 就是我的起點。
+可分析：
+
+多次錯誤登入
+
+API 速率異常
+
+異常 IP 活動
+
+🚀 如何使用 (Example)
+python encryption/aes_encryptor.py
+python pentest-utils/header_info.py https://example.com
+python phishing-sim/generator.py
+python ai-log-analyzer/rule_based_ai.py logs/sample.log
+
+📚 License
+
+MIT — 可任意修改使用，歡迎二創。
+
+🧩 Contribution
+
+歡迎 PR，例如加入：
+
+新的釣魚模板
+
+新的 encryption 模式
+
+新的攻擊模擬器
+
+🎉 最後
+
+本專案目的不是重現真實攻擊，而是：
+
+用創意，把資安變得更好理解、更有趣。
