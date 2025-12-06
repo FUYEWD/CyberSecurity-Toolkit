@@ -2,7 +2,7 @@
 A beginner-friendly cybersecurity toolkit including port scanner, AES encryption, web security demos, and security reports.
 🌐 網路安全工具包（CyberSecurity Toolkit）
 
-一個由 張為凱（ENTP / 資料科學家培訓中） 開發、面向初學者與研究者的網路安全工具包。
+一個由 張為凱 開發、面向初學者與研究者的網路安全工具包。
 這個專案集合了 網路掃描、密碼學、Web 安全性示範與資安技術文件，目的在於：
 
 建立我的 資安學習框架與作品集
