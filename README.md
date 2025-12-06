@@ -74,20 +74,6 @@ DOM-based XSS
 ✨ 我為什麼要做這個？
 這是未來做 滲透測試、資安研究、CTF writeup 必備技能，也展示我在「技術寫作」與「邏輯表達」的能力。
 
-🛠️ 專案結構
-CyberSecurity-Toolkit/
-│
-├── scanner/
-│   └── port_scanner.py
-│
-├── crypto/
-│   └── aes_encrypt.py
-│
-├── web_security/
-│   └── xss_demo.md
-│
-└── reports/
-    └── sample_report.md
 
 🎯 我的目標（為什麼做這個專案）
 
